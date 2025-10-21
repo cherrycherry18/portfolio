@@ -18,7 +18,7 @@ export default function Footer() {
               Gubbala Charan
             </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-              Associate Software Engineer Intern • MCA Graduate
+              Associate Software Engineer Intern | MCA Graduate
             </p>
           </div>
           

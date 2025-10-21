@@ -7,10 +7,10 @@ export default function Hero() {
         {/* LEFT SIDE */}
         <div className="hero-left">
           <h1>
-            Hi, I'm CHARAN GUBBALA <span className="accent">Gubbala Charan</span>
+            Hi, I'm <span className="accent">Gubbala Charan</span>
           </h1>
           <p className="lead">
-            Associate Software Engineer Intern • MCA Graduate
+            Associate Software Engineer Intern | MCA Graduate
           </p>
           <p>
             I specialize in building modern web applications using React.js and FastAPI, 
