@@ -6,7 +6,7 @@ const projects = [
     desc: 'Advanced web application using Stable Diffusion models for generating high-quality images from text prompts. Features include batch processing, style transfer, and real-time preview.',
     tech: ['Python', 'Django', 'Stable Diffusion', 'GAN', 'CLIP'],
     features: ['Real-time image generation', 'Style transfer capabilities', 'Converting text-to-image', 'User authentication'],
-    github: '#',
+    github: 'https://github.com/cherrycherry18/text-image.git',
     demo: '#'
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     desc: 'Complete e-commerce solution with modern UI, secure payment integration, and admin dashboard. Implemented user authentication, product catalog, cart, and order management with CRUD operations.',
     tech: ['React', 'FastAPI', 'MySQL',],
     features: ['Secure payment processing', 'CRUD Operations', 'Admin dashboard', 'Product catalog'],
-    github: '#',
+    github: 'https://github.com/cherrycherry18/E-commerce.git',
     demo: '#'
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     desc: 'Machine learning-powered system that analyzes social media content and suggests relevant hashtags using TF-IDF vectorization and k-NN algorithms.',
     tech: ['Python', 'KNN', 'TF-IDF', 'Flask',],
     features: ['Content analysis', 'Hashtag suggestions', 'Trending topics', 'API integration'],
-    github: '#',
+    github: 'https://github.com/cherrycherry18/hash-tag-prediction.git',
     demo: '#'
   },
 
@@ -57,7 +57,7 @@ export default function Projects() {
             </div>
             
             <div className="project-links">
-              <a href={project.github} className="btn-primary" onClick={e => e.preventDefault()}>
+              <a href={project.github} className="btn-primary" target="_blank" rel="noopener noreferrer">
                 <span>📁</span> View Code
               </a>
               {/* <a href={project.demo} className="btn-secondary" onClick={e => e.preventDefault()}>
