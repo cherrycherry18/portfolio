@@ -5,15 +5,15 @@ const projects = [
     title: ' Text-to-Image Generator',
     desc: 'Advanced web application using Stable Diffusion models for generating high-quality images from text prompts. Features include batch processing, style transfer, and real-time preview.',
     tech: ['Python', 'Django', 'Stable Diffusion', 'GAN', 'CLIP'],
-    features: ['Real-time image generation', 'Style transfer capabilities', 'Batch processing', 'User authentication'],
+    features: ['Real-time image generation', 'Style transfer capabilities', 'Converting text-to-image', 'User authentication'],
     github: '#',
     demo: '#'
   },
   {
     title: ' E-Commerce Web Application',
-    desc: 'Complete e-commerce solution with modern UI, secure payment integration, inventory management, and admin dashboard. Built with microservices architecture.',
+    desc: 'Complete e-commerce solution with modern UI, secure payment integration, and admin dashboard. Implemented user authentication, product catalog, cart, and order management with CRUD operations.',
     tech: ['React', 'FastAPI', 'MySQL',],
-    features: ['Secure payment processing', 'Real-time inventory', 'Admin dashboard', 'Responsive design'],
+    features: ['Secure payment processing', 'CRUD Operations', 'Admin dashboard', 'Product catalog'],
     github: '#',
     demo: '#'
   },
@@ -60,9 +60,9 @@ export default function Projects() {
               <a href={project.github} className="btn-primary" onClick={e => e.preventDefault()}>
                 <span>📁</span> View Code
               </a>
-              <a href={project.demo} className="btn-secondary" onClick={e => e.preventDefault()}>
+              {/* <a href={project.demo} className="btn-secondary" onClick={e => e.preventDefault()}>
                 <span>🚀</span> Live Demo
-              </a>
+              </a> */}
             </div>
           </article>
         ))}

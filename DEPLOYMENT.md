@@ -40,3 +40,4 @@ If the npm script doesn't work, you can manually deploy:
 - Make sure GitHub Pages is enabled in your repository settings
 - The source should be set to "Deploy from a branch" and select "gh-pages" branch
 - It may take a few minutes for changes to reflect on the live site
+

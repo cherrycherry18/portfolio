@@ -21,45 +21,59 @@ const skillCategories = [
 ];
 
 export default function Skills() {
-  const flatSkills = skillCategories.flatMap(cat => cat.skills);
   return (
     <section id="skills" className="card">
       <h2>Technical Skills</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-        A quick snapshot of tools and technologies I work with
-      </p>
-      {/* 3 x 3 grid of skill cards */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-        gap: '16px'
+      {/* Category cards in 4-column grid */}
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(4, 1fr)', 
+        gap: '16px',
+        marginTop: '16px' 
       }}>
-        {flatSkills.slice(0, 9).map((skill) => (
-          <div key={skill} style={{
+        {skillCategories.map((category, index) => (
+          <div key={index} className="card" style={{ 
+            padding: '20px',
+            textAlign: 'center',
             background: 'var(--card)',
             border: '1px solid rgba(0,0,0,0.06)',
             borderRadius: '16px',
-            padding: '16px',
-            textAlign: 'center',
-            fontWeight: 600,
-            color: 'var(--text-secondary)',
             boxShadow: 'var(--shadow-sm)'
           }}>
-            {skill}
-          </div>
-        ))}
-      </div>
-
-      {/* Remaining grouped by category below */}
-      <div style={{ marginTop: '32px' }} className="skill-grid">
-        {skillCategories.map((category, index) => (
-          <div key={index} className="skill-category">
-            <h4>{category.title}</h4>
-            <div className="skill-pills">
-              {category.skills.map(skill => (
-                <span key={skill} className="skill-pill">{skill}</span>
+            <h3 style={{ 
+              marginBottom: '12px', 
+              color: 'var(--accent-primary)',
+              fontSize: '1.1rem'
+            }}>
+              {category.title}
+            </h3>
+            <ul style={{ 
+              color: 'var(--text-secondary)', 
+              fontSize: '0.9rem',
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              textAlign: 'center',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center'
+            }}>
+              {category.skills.map((skill, skillIndex) => (
+                <li key={skillIndex} style={{ 
+                  marginBottom: '6px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '100%'
+                }}>
+                  <span style={{
+                    marginRight: '6px',
+                    color: 'var(--accent-primary)'
+                  }}>•</span>
+                  {skill}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>

@@ -3,31 +3,30 @@ import React from "react";
 const internships = [
   {
     company: "Datapoint IT & Hardware Pvt. Ltd.",
-    role: "Python Developer with Deep Learning",
-    duration: "6 months",
-    period: "2023",
-    description: "Developed machine learning models and deep learning applications using Python, TensorFlow, and PyTorch. Worked on computer vision projects and natural language processing tasks.",
+    role: "Python Developer with Deep Learning Intern",
+    duration: "4 months",
+    period: "2025",
+    description: "Developed machine learning models and deep learning applications using Python and Django.",
     achievements: [
       "Built image classification models with 95% accuracy",
       "Developed NLP pipelines for text analysis",
       "Implemented deep learning architectures for computer vision",
       "Collaborated with senior developers on ML projects"
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "scikit-learn", "Pandas"]
+    technologies: ["Python", "TensorFlow", "PyTorch", "GAN", "Django", "CLIP"]
   },
   {
     company: "Triaright Solutions",
     role: "Python Development Intern",
     duration: "4 months",
-    period: "2022",
-    description: "Worked on backend development using Python frameworks and database management. Gained experience in API development and web application architecture.",
+    period: "2023",
+    description: "Worked on backend development using Python frameworks and database management.",
     achievements: [
       "Developed RESTful APIs using FastAPI",
       "Implemented database optimization techniques",
-      "Created automated testing suites",
-      "Participated in code reviews and agile development"
+     
     ],
-    technologies: ["Python", "FastAPI", "PostgreSQL", "Docker", "Git", "Pytest"]
+    technologies: ["Python", "FastAPI", "PostgreSQL",]
   }
 ];
 

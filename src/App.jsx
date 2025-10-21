@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Internships from "./components/Internships";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Profile from "./components/Profile";
 import "./styles/styles.css"; // Import global styles
 
 export default function App() {
@@ -15,20 +16,26 @@ export default function App() {
       {/* Navigation Bar */}
       <Navbar />
 
-      {/* Main Website Sections */}
-      <main>
-        {/* Hero Section */}
-        <Hero />
+      {/* Main Layout with Sticky Profile */}
+      <div className="main-layout">
+        {/* Sticky Profile Sidebar */}
+        <Profile />
 
-        {/* About, Skills, Projects, Internships, Contact */}
-        <div className="container">
-          <About />
-          <Skills />
-          <Projects />
-          <Internships />
-          <Contact />
-        </div>
-      </main>
+        {/* Main Website Sections */}
+        <main className="main-content">
+          {/* Hero Section */}
+          <Hero />
+
+          {/* About, Skills, Projects, Internships, Contact */}
+          <div className="container">
+            <About />
+            <Skills />
+            <Projects />
+            <Internships />
+            <Contact />
+          </div>
+        </main>
+      </div>
 
       {/* Footer */}
       <Footer />
