@@ -27,7 +27,7 @@ export default function Footer() {
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="/resume.jpg" target="_blank" rel="noreferrer">Resume</a>
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer">Resume</a>
           </div>
         </div>
         

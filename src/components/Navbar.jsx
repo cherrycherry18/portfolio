@@ -11,7 +11,7 @@ export default function Navbar() {
           <a href="#projects">Projects</a>
           <a href="#internships">Internships</a>
           <a href="#contact">Contact</a>
-          <a className="btn" href="/resume.pdf" download>Resume</a>
+          <a className="btn" href={`${import.meta.env.BASE_URL}resume.pdf`} download>Resume</a>
         </div>
       </div>
     </nav>

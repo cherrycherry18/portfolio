@@ -21,7 +21,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn-primary">
               <span>🚀</span> View My Work
             </a>
-            <a href="/resume.jpg" target="_blank" rel="noreferrer" className="btn btn-secondary">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" className="btn btn-secondary">
               <span>📄</span> Download Resume
             </a>
           </div>
@@ -77,7 +77,7 @@ export default function Hero() {
           <div className="profile-card">
             {/* Avatar Image from public folder */}
             <div className="avatar">
-              <img src="/profile.jpg" alt="Gubbala Charan" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Gubbala Charan" />
             </div>
 
             {/* Profile Info */}

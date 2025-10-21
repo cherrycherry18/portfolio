@@ -32,7 +32,7 @@ export default function About() {
           <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
             <li><strong>Email:</strong> <a href="mailto:nameischaran4@gmail.com" style={{ color: 'var(--accent-primary)' }}>nameischaran4@gmail.com</a></li>
             <li><strong>Location:</strong> West Godavari, India</li>
-            <li><strong>Resume:</strong> <a href="/resume.jpg" target="_blank" rel="noreferrer" style={{ color: 'var(--accent-primary)' }}>View</a></li>
+            <li><strong>Resume:</strong> <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-primary)' }}>View</a></li>
           </ul>
         </div>
         <div className="mini-card" style={{ background: 'var(--card)', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '16px', padding: '16px' }}>
